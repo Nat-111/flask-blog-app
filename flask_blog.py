@@ -40,14 +40,21 @@ def register():
         return redirect(url_for('home'))
 
 
-    return render_template('register.html',title ='Register', form=form)
+    return render_template('register.html', form=form ,title="Register")
 
 
 
-@app.route("/login")
+@app.route("/login", methods=['GET','POST'])
 def login():
     form = LoginForm()
-    return render_template('login.html',title ='Login', form=form)
+    if form.validate_on_submit():
+        if form.email.data == "nathaniel@gmail.com" and form.password.data == "password":
+            flash(f'Logged in as {form.email.data}!', 'success')
+            return redirect(url_for('home'))
+        else:
+            flash('Login Unsuccessful. Please check email and password', 'danger')
+
+    return render_template('login.html', title ='Login', form=form)
 
 if __name__ == ("__main__"):
     app.run(debug=True)

@@ -30,32 +30,38 @@ A simple Flask blog application with user registration, login, flash messages, a
 ## Setup
 
 1. Clone the repository:
+
    ```bash
    git clone <your-repository-url>
    cd my_flask_app
    ```
 
 2. Create and activate a virtual environment:
+
    ```bash
    python -m venv venv
    ```
 
    On Windows:
+
    ```bash
    .\venv\Scripts\activate
    ```
 
    On macOS/Linux:
+
    ```bash
    source venv/bin/activate
    ```
 
 3. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
 
 4. Run the app:
+
    ```bash
    python flask_blog.py
    ```
@@ -68,14 +74,17 @@ A simple Flask blog application with user registration, login, flash messages, a
 ## GitHub Repo Recommendation
 
 Project name suggestion:
+
 - `flask-blog-app`
 
 Project description suggestion:
+
 - `A simple Flask blog application with registration, login, and responsive templates.`
 
 ## Notes
 
 The following are excluded from Git using `.gitignore`:
+
 - `venv/`
 - `__pycache__/`
 - `.env`
