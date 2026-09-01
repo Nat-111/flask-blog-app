@@ -74,17 +74,14 @@ A simple Flask blog application with user registration, login, flash messages, a
 ## GitHub Repo Recommendation
 
 Project name suggestion:
-
 - `flask-blog-app`
 
 Project description suggestion:
-
 - `A simple Flask blog application with registration, login, and responsive templates.`
 
 ## Notes
 
 The following are excluded from Git using `.gitignore`:
-
 - `venv/`
 - `__pycache__/`
 - `.env`
